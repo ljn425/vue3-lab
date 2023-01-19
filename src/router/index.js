@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "@/views/HomeView.vue";
-import MainView from "@/views/MainView.vue";
 
 const routes = [
   {
@@ -10,8 +9,11 @@ const routes = [
   },
   {
     path: "/main",
-    name: "main",
-    component: MainView,
+    component: () => import("@/views/MainView.vue"),
+  },
+  {
+    path: "/:pathMatch(.*)*",
+    component: () => import("@/views/errorPage/PageNotFound.vue"),
   },
 ];
 
