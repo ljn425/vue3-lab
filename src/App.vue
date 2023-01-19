@@ -1,10 +1,21 @@
 <template>
   <div>
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/main">main</router-link>
-    </nav>
+    <app-header></app-header>
     <router-view />
   </div>
 </template>
-<style></style>
+<script>
+import AppHeader from "./components/AppHeader.vue";
+
+export default {
+  components: {
+    AppHeader,
+  },
+};
+</script>
+<style>
+body {
+  background-color: #1a1a1a;
+  color: white;
+}
+</style>
