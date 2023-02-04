@@ -24,7 +24,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .left-sidebar {
   height: 1000px;
   overflow-y: scroll;
@@ -33,6 +33,33 @@ export default {
   padding-top: 30px;
 }
 main {
-  padding: 48px 32px 96px;
+  padding: 28px 32px 96px;
+}
+h1 {
+  font-size: 32px;
+  padding-bottom: 48px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-top: 64px;
+  margin-bottom: 28.8px;
+}
+
+hr {
+  background: #636363;
+  height: 1px;
+  border: 0;
+}
+
+/* code {
+  color: #aac8e4;
+  background: #2f2f2f;
+  border-radius: 1rem;
+  box-sizing: border-box;
+} */
+
+.header-anchor {
+  color: aquamarine;
 }
 </style>
