@@ -8,9 +8,22 @@ const routes = [
     component: HomeView,
   },
   {
-    path: "/main",
-    component: () => import("@/views/MainView.vue"),
+    path: "/guide",
+    component: () => import("@/views/GuideView.vue"),
+    children: [
+      {
+        path: "/application",
+        component: () =>
+          import("@/components/guideContents/CreatingAnApplication.vue"),
+      },
+      {
+        path: "/template-syntax",
+        component: () =>
+          import("@/components/guideContents/TemplateSyntax.vue"),
+      },
+    ],
   },
+
   {
     path: "/:pathMatch(.*)*",
     component: () => import("@/views/errorPage/PageNotFound.vue"),

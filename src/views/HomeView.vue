@@ -1,7 +1,8 @@
 <template>
   <div class="door">
     <p class="title text-9xl text-green-500">Vue3 Lab</p>
-    <router-link to="/main">
+    <!-- Get Started Button-->
+    <router-link to="/guide">
       <button class="rounded-none">Get Started</button>
     </router-link>
   </div>

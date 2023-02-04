@@ -1,11 +1,13 @@
 <template>
   <div class="grid grid-cols-5 gap-3">
     <aside class="sidebar left-sidebar">
-      <h2>Essentials</h2>
+      <DocsSide></DocsSide>
     </aside>
     <main class="col-span-4">
       <div class="grid grid-cols-5 gap-10">
-        <article class="col-span-4"></article>
+        <article class="col-span-4">
+          <router-view></router-view>
+        </article>
         <aside class="right-sidebar">오른쪽 사이드</aside>
       </div>
     </main>
@@ -13,7 +15,13 @@
 </template>
 
 <script>
-export default {};
+import DocsSide from "@/components/leftSide/GuideSide.vue";
+
+export default {
+  components: {
+    DocsSide,
+  },
+};
 </script>
 
 <style scoped>
