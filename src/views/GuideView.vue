@@ -63,4 +63,15 @@ code {
 .header-anchor {
   color: aquamarine;
 }
+
+.demo {
+  padding: 22px 24px;
+  border-radius: 8px;
+  margin-bottom: 1.2em;
+  background-color: #2f2f2f;
+}
+.demo-btn {
+  border: solid;
+  padding: 10px;
+}
 </style>
