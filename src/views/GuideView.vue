@@ -52,12 +52,13 @@ hr {
   border: 0;
 }
 
-/* code {
+code {
   color: #aac8e4;
   background: #2f2f2f;
   border-radius: 1rem;
   box-sizing: border-box;
-} */
+  font-size: 14px;
+}
 
 .header-anchor {
   color: aquamarine;
