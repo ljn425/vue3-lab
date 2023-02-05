@@ -4,7 +4,6 @@
       <div class="title">
         <h2>Essentials</h2>
       </div>
-
       <div v-for="(item, i) in routeMenu" :key="`${item.name}_${i}`">
         <a
           class="link"
@@ -37,8 +36,16 @@ export default {
           name: "Reactivity Fundamentals",
         },
         {
-          link: "/application",
-          name: "Createing an Application",
+          link: "/computed",
+          name: "Computed Properties",
+        },
+        {
+          link: "/class-and-style",
+          name: "Class and Style Bindings",
+        },
+        {
+          link: "/conditional",
+          name: "Conditional Rendering",
         },
       ],
     };

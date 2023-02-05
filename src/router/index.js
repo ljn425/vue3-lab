@@ -21,6 +21,20 @@ const routes = [
         component: () =>
           import("@/components/guideContents/TemplateSyntax.vue"),
       },
+      {
+        path: "/computed",
+        component: () =>
+          import("@/components/guideContents/ComputedProperties.vue"),
+      },
+      {
+        path: "/class-and-style",
+        component: () => import("@/components/guideContents/ClassAndStyle.vue"),
+      },
+      {
+        path: "/conditional",
+        component: () =>
+          import("@/components/guideContents/ConditionalRendering.vue"),
+      },
     ],
   },
 
